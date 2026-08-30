@@ -1,0 +1,39 @@
+name: JarvisVisionPrototype
+options:
+  bundleIdPrefix: com.fyzel
+  deploymentTarget:
+    visionOS: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    MARKETING_VERSION: 0.1.0
+    CURRENT_PROJECT_VERSION: 1
+targets:
+  JarvisVisionPrototype:
+    type: application
+    platform: visionOS
+    sources:
+      - JarvisVisionPrototype
+    resources:
+      - JarvisVisionPrototype/Fonts
+      - JarvisVisionPrototype/Vision-Icons
+      - JarvisVisionPrototype/Materials
+    info:
+      path: JarvisVisionPrototype/Info.plist
+      properties:
+        CFBundleDisplayName: Jarvis Vision
+        UILaunchScreen: {}
+        UIApplicationSupportsIndirectInputEvents: true
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+        NSHandsTrackingUsageDescription: Jarvis Vision uses hand tracking to drive holographic particle effects.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.fyzel.JarvisVisionPrototype
+        TARGETED_DEVICE_FAMILY: 7
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        ENABLE_PREVIEWS: YES
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: J3NP2QDWSC
+        SWIFT_OBJC_BRIDGING_HEADER: JarvisVisionPrototype/Bridging.h
+        CLANG_CXX_LANGUAGE_STANDARD: "gnu++20"

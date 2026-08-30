@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BB298FBE6545831011AD84 /* Mesh.mm in Sources */ = {isa = PBXBuildFile; fileRef = 518A0ADCE9833E532CC6FAFE /* Mesh.mm */; };
+		01A1FB9AF10A5FDA7BBB0F4D /* white-hood-17.png in Resources */ = {isa = PBXBuildFile; fileRef = E9FEE2F576E285A31301223A /* white-hood-17.png */; };
+		03F88485C003E995C7711972 /* white-head-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 455654C740AE730DB6CBFD7A /* white-head-03.png */; };
+		047F305A84B311388BC1E012 /* studio.hdr in Resources */ = {isa = PBXBuildFile; fileRef = B1555D14958C4093737D8913 /* studio.hdr */; };
+		087F73E177C17BB855016F08 /* white-head-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AAF1FDECDDE4309143B81 /* white-head-07.png */; };
+		0BABC857D3C0ACA6320DA4A3 /* dark-skel-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB4E717F057882D3BDFFC3C /* dark-skel-01.png */; };
+		0C75CD0EB3735E2A1B6D35B9 /* white-egg-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 904A7920D8B9737B861845C6 /* white-egg-01.png */; };
+		0CD91B62801B67DD02E98028 /* white-hood-14.png in Resources */ = {isa = PBXBuildFile; fileRef = A8B82BADEB3D3531C0D14C0D /* white-hood-14.png */; };
+		1723ED2A43A007483DA638C2 /* white-hood-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8066E4B7057CB58FCC617223 /* white-hood-25.png */; };
+		184F70B21F94AF915B028D99 /* white-mask-04.png in Resources */ = {isa = PBXBuildFile; fileRef = AED36DD507173503510A047E /* white-mask-04.png */; };
+		1A631EE7958C35AA7042795C /* white-hair-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CC18A32C75F53CDAB9AE6D2 /* white-hair-09.png */; };
+		1FD412C821AD9DEE38905F84 /* white-skel-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C5CB561C1C38DF787C6DB0 /* white-skel-02.png */; };
+		20A901E0660FA94DFAC73F34 /* white-headset-02.png in Resources */ = {isa = PBXBuildFile; fileRef = B329C47CC1721B37B6E56140 /* white-headset-02.png */; };
+		24BCDBBB360E7CDA3970FA30 /* white-hair-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E0A1AAA390A6429D022006 /* white-hair-08.png */; };
+		263D1A4361307704B1CE872F /* HolographicComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F5DE922CF963EFB99BF22 /* HolographicComponent.swift */; };
+		2C1266EC32841868892AE1A3 /* FUIShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE1BA1BD214A237C524804 /* FUIShowcaseView.swift */; };
+		2D28481FC561F2A8F90F61E5 /* HandTrackingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1316951193E8C5A27A4B6EC4 /* HandTrackingModel.swift */; };
+		2ED1D8206500DCC8203D2CD9 /* white-headset-03.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9B07CE4941F63351372266 /* white-headset-03.png */; };
+		34EF5192D95FA7A491F3B278 /* white-grill-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 4894C83BFA644D4DEEFF9B50 /* white-grill-01.png */; };
+		380383A7212EC7C1AAD0AD9C /* JarvisImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED495B6B5DB3CD7C9E8F41 /* JarvisImmersiveView.swift */; };
+		3ABD84566B1197862C935F7C /* white-hood-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A26950717FC559EFAA456BA /* white-hood-09.png */; };
+		3F1050152B1D114DF30CB2F1 /* white-hood-21.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B413D9C5DBAC26AA06B9076 /* white-hood-21.png */; };
+		400909503C9F0785F621DCC5 /* GlowingModelImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5B350D5136D0EE954105A2 /* GlowingModelImmersiveView.swift */; };
+		401F61595992032AA4F6BCAE /* white-alien-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 1521532F689ADBDA58A20301 /* white-alien-01.png */; };
+		40CF69E10EBD8EF658D2A649 /* white-head-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE68ECEDD814C65CE972FBD /* white-head-04.png */; };
+		46BA178AEA7424C4CDBBD217 /* white-skel-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 85AAF9A2E4072516C916853F /* white-skel-03.png */; };
+		49779D17C946FD488343FB04 /* white-headset-05.png in Resources */ = {isa = PBXBuildFile; fileRef = CB29C8BAF734F858E76243DF /* white-headset-05.png */; };
+		497FF6EAB26BFF1EEFDB8978 /* white-hood-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 258E9C5A5DAA0FB914415A7C /* white-hood-06.png */; };
+		4AB724B98034E0F8DA6C83C9 /* gray-skel-01.png in Resources */ = {isa = PBXBuildFile; fileRef = CB658A0B4692143EDC5A7237 /* gray-skel-01.png */; };
+		4B305C24C8D6AC16E5969AFC /* white-hair-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 09042E307C5BB099BC275EF8 /* white-hair-07.png */; };
+		4CA2FE8E826EDD84B9FD1DF1 /* white-grill-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C558624FD69762A0A746F5 /* white-grill-02.png */; };
+		4CE2A4B93C35E2883554730C /* white-robot-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 73BE04850F377A5DDF30143D /* white-robot-03.png */; };
+		4D289D2A9343FBC9CA104A6E /* cyan-skel-03.png in Resources */ = {isa = PBXBuildFile; fileRef = AB212A363A5F81F1DBDB9E43 /* cyan-skel-03.png */; };
+		4DEF3E16FCEBFA7428AC867F /* white-mask-02.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC71E4CD7AAD02A1C0B7BA9 /* white-mask-02.png */; };
+		4F45A1D2DC3D021D7D67FD73 /* white-bald-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 51682D6A31B127908EA0E826 /* white-bald-01.png */; };
+		4F543E058D6817DBBCBF5F1F /* white-hood-23.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A56DF3011D5D4ED5A07B37 /* white-hood-23.png */; };
+		51588B4B24430C28257470FF /* white-hood-04.png in Resources */ = {isa = PBXBuildFile; fileRef = C17267FE6816146E76395869 /* white-hood-04.png */; };
+		545167B781AC567F5A292022 /* white-head-08.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFAAB22841BA85C8B60348C /* white-head-08.png */; };
+		548E8A65AF2839072154AF0F /* white-hair-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 878204A7CD98E0DB287A4FD1 /* white-hair-01.png */; };
+		54FE0B6F972042006827F181 /* HolographicSurface.mtlx in Resources */ = {isa = PBXBuildFile; fileRef = 0A46B197281ECF8AD9FC1ADF /* HolographicSurface.mtlx */; };
+		5678DDA3C5FA8C1FF4FB4A93 /* JarvisMetalImmersiveContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E9BBCE995AECC6FEB0D36 /* JarvisMetalImmersiveContent.swift */; };
+		5724CD0A2D01C2AF305A4E83 /* black-headset-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C13D096A9C42BE792F938E9 /* black-headset-01.png */; };
+		59AFFD03BD8280AA18FD3071 /* white-robot-01.png in Resources */ = {isa = PBXBuildFile; fileRef = B407281258A99599F9C66D8E /* white-robot-01.png */; };
+		5B9EAA2EB57A68E563ABF216 /* cyan-skel-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 28201800111B0EB85C38A2A3 /* cyan-skel-02.png */; };
+		5DE6B4CBFD7A1F728EA43F66 /* blue-skel-01.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF37FF70053CFB369019F95 /* blue-skel-01.png */; };
+		5F062729A343AB44E7BAEDD7 /* white-shine-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BB8FD7896490598DE84C1D /* white-shine-01.png */; };
+		5F7BC106B031F6A9327013E1 /* white-hair-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 11817442A3D4993DA7EDD9D5 /* white-hair-02.png */; };
+		612A042FB80D5D1689105511 /* white-headset-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 602FF8DB796673A941CB178A /* white-headset-01.png */; };
+		639DD93DB537F0882895405D /* Orbitron.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FC1DC465FCC7864886DD073 /* Orbitron.ttf */; };
+		64D053587F8ACFA3A44323AC /* MathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C39B209B4C5F05D4F0E80D /* MathExtensions.swift */; };
+		676235704DD099157D582121 /* white-hood-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 3481DDD2EE4A3247C1691312 /* white-hood-13.png */; };
+		6A8963E3184E0BF53A7DF666 /* MetalParticlePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC036A6E9862E8767A369154 /* MetalParticlePreviewView.swift */; };
+		6BE9B84C93D8F3480073AD35 /* cyan-alien-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0015A4049FFF0EFCBF983F5D /* cyan-alien-01.png */; };
+		6E9B25F9BE5CE4120CA9B80D /* SpatialRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D0AE6756CFB9A16002D3DDC /* SpatialRenderer.mm */; };
+		6F0FB907A842DB1742D0FBBC /* cyan-skel-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 2900F3BB4F2303E8B3C2D16C /* cyan-skel-01.png */; };
+		705F95E2A02CABE2B6A49CB2 /* JarvisVisionPrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A93FB3E12DDBBFD8B219E /* JarvisVisionPrototypeApp.swift */; };
+		751C9885C1CEEA1710C4820A /* white-hood-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 3793F2881AE540EF5E1BBEE6 /* white-hood-07.png */; };
+		75417D3BD3EA3AF9706FCE90 /* Orbitron-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95C2FCDCBC5BC2ED40B455CE /* Orbitron-ExtraBold.ttf */; };
+		75EA957608BEE377C4D80E69 /* EnvironmentShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = F19468F875EDCEFAD4348C66 /* EnvironmentShaders.metal */; };
+		77EA8DAF026759EDB00C5505 /* gray-skel-04.png in Resources */ = {isa = PBXBuildFile; fileRef = C2A664B66887001195609710 /* gray-skel-04.png */; };
+		7887A05170E900F3C807BEDB /* white-head-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C36A454DDF2A64731FF6BA /* white-head-09.png */; };
+		7A423D63211A578BC04E1A41 /* white-hood-02.png in Resources */ = {isa = PBXBuildFile; fileRef = D520DC468CF066DC174E0669 /* white-hood-02.png */; };
+		7B3EB3D0B60E578D1CBA1992 /* white-headset-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 90066F9ECD7571B64C0C191D /* white-headset-04.png */; };
+		7C1065644DA034D6B6BBC271 /* white-hood-22.png in Resources */ = {isa = PBXBuildFile; fileRef = B28FCE8017D705E05C95BF7E /* white-hood-22.png */; };
+		7C29E6B32FE60F03F7CB8740 /* white-hood-11.png in Resources */ = {isa = PBXBuildFile; fileRef = E33338E7A47EC1BA285379E9 /* white-hood-11.png */; };
+		7D75C6B91425C10EFA689F5F /* white-scuba-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 273D5E139680A4EA3F67DA5B /* white-scuba-01.png */; };
+		7FDC73202ABFA8EF058A9144 /* white-hood-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 50AA4D582DCC32DA4A829773 /* white-hood-08.png */; };
+		84E89BECC7321DC293B86134 /* white-hair-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 33D89FA962646FC9A8AB932B /* white-hair-04.png */; };
+		85C71B07B964D33A00FD91EF /* white-sharp-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 36CF5054D402584794BA1904 /* white-sharp-01.png */; };
+		893C46BA34258C5159F01D4A /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1E49A50A3AFF5F1FA3DE97 /* ControlPanelView.swift */; };
+		8B8051E9F65861464ABC542C /* white-hair-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C5A7B221FDA3E5631F7AD6 /* white-hair-05.png */; };
+		8CD98CA92A3E7F5C53B8EC48 /* white-headphones-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 148BC7CB94103EB1A5BDD614 /* white-headphones-01.png */; };
+		8D6911185B848A7235747EC7 /* white-mask-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D7C299B50F08E2E85E6CC7F9 /* white-mask-03.png */; };
+		8ED4606B0C01AC38EB314871 /* white-lines-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 7071338C07352A2E6AF1990A /* white-lines-03.png */; };
+		9188A3785A9C0966C0806CBB /* white-line-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C062C866C153E53D2AE25A75 /* white-line-01.png */; };
+		92B1BBBCFB4F08013DE7D2E1 /* white-head-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDE0E7426BD971AD22D9066 /* white-head-02.png */; };
+		982E58F5290501531B9765F3 /* white-tube-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D80595B02DFC43EF841EB /* white-tube-01.png */; };
+		9D15FCAB9ABCC687E434CCE3 /* white-hood-31.png in Resources */ = {isa = PBXBuildFile; fileRef = B7E44D77C931940FE2848408 /* white-hood-31.png */; };
+		A14BE88A36C29A6CBFF8274C /* white-hood-16.png in Resources */ = {isa = PBXBuildFile; fileRef = E2DD7905565FF3D652DBD5A0 /* white-hood-16.png */; };
+		A4C9F1D4BE04B9554C757F09 /* JarvisSceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A847FA869718F3D41F3A7DBD /* JarvisSceneController.swift */; };
+		A6B4366E2C97263E8F750CEF /* white-lines-02.png in Resources */ = {isa = PBXBuildFile; fileRef = BB35E708CF45814300DDC229 /* white-lines-02.png */; };
+		A81F87CBBDB63AD4DCEAA5A9 /* white-hood-12.png in Resources */ = {isa = PBXBuildFile; fileRef = E05B7FC8967C2BA48023E7E3 /* white-hood-12.png */; };
+		AA78324E6A13C75D31086481 /* white-skel-01.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E9D1FA963F087865FA88CC /* white-skel-01.png */; };
+		AA9B0EFEFA981A79DB6D9E15 /* white-hood-28.png in Resources */ = {isa = PBXBuildFile; fileRef = A113D730D41CD12DF890A135 /* white-hood-28.png */; };
+		ACD71435B90F55859A8A8835 /* white-mask-05.png in Resources */ = {isa = PBXBuildFile; fileRef = B36CAA3F45C2ECC0D43D4BE1 /* white-mask-05.png */; };
+		AD097893EB18E247BE953F5B /* white-robot-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F3ADDB133629424295C27A /* white-robot-02.png */; };
+		B14580732C01E00AF14BFE5D /* white-grid-01.png in Resources */ = {isa = PBXBuildFile; fileRef = F7065D4AD6860C9A27A3BD34 /* white-grid-01.png */; };
+		B5F5C026B2A10C52DCF6F715 /* white-hood-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 742F5F6D93CB18A822569829 /* white-hood-29.png */; };
+		B606D6EEF5BA9BE359C190B0 /* white-hood-26.png in Resources */ = {isa = PBXBuildFile; fileRef = CB6B829CFF256409823F0C83 /* white-hood-26.png */; };
+		B6C288A1911089ED0B4E4E73 /* white-hood-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC8FA795D1CFC229C283CE4 /* white-hood-20.png */; };
+		BCA3DB1CD9EBD81381FD4D8D /* gray-skel-03.png in Resources */ = {isa = PBXBuildFile; fileRef = D18E6D537F3D6789C5978CF1 /* gray-skel-03.png */; };
+		BECB3603C0DCA90114F652F5 /* white-hood-10.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E468C777035A5C6C2C04D5 /* white-hood-10.png */; };
+		BF68ACEDBAD98E43A9A72E0B /* white-hood-18.png in Resources */ = {isa = PBXBuildFile; fileRef = 1127042BBA11BD11DFEF094C /* white-hood-18.png */; };
+		C0E985A791479986FB08A58B /* white-hair-06.png in Resources */ = {isa = PBXBuildFile; fileRef = CAAEC8F58BC84921EB250FE6 /* white-hair-06.png */; };
+		C5621BF048BC5D62CCD3E9A8 /* white-hood-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E21A43C8D5225ECB5A61DB /* white-hood-30.png */; };
+		C6903DF2813B0ACD00EBEC3E /* cyan-skel-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 053BCD4F58ECDF66B1F773ED /* cyan-skel-04.png */; };
+		C6F781FDF09E3DDA88E196B4 /* white-head-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6006F13F47499A1CA821AE64 /* white-head-01.png */; };
+		C7960A6A0E5158AD6FE78A8B /* gray-skel-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC72F10E7EA585F8882D124 /* gray-skel-02.png */; };
+		C8D827BC34AC0163C4C0BBEE /* FUIImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E2990CEA690C10F19504E /* FUIImmersiveView.swift */; };
+		D0CB4992F59524963F6440B6 /* white-hood-19.png in Resources */ = {isa = PBXBuildFile; fileRef = E59FE77F9B89F384FBB45937 /* white-hood-19.png */; };
+		D0CF173FCBDA14F868A957B4 /* white-hood-15.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D4D0A4ED408F971BDC2B3EA /* white-hood-15.png */; };
+		D4422CA3713A318A6061999E /* white-collar-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C11E84AFA3588E67158E8C /* white-collar-01.png */; };
+		D44D296131BBCA8658290B6C /* white-hair-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E80771CC7FB505BE134A67 /* white-hair-03.png */; };
+		D459A3B814E819A5DBEC81B7 /* bluemarble.png in Resources */ = {isa = PBXBuildFile; fileRef = F7BE4136BBE6EFDC7DFAB022 /* bluemarble.png */; };
+		D8E3D02C9B553A27B643F184 /* white-hood-32.png in Resources */ = {isa = PBXBuildFile; fileRef = D21F786B302E78DFB5683854 /* white-hood-32.png */; };
+		DA141E961F22B95851BE250C /* white-hood-01.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC2CB4217E9B7C3D2520CCA /* white-hood-01.png */; };
+		DB69E8B2EFBCFD68AE9EDAF7 /* MetalParticleShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = DEE7715A0F81AF16FFDCF554 /* MetalParticleShaders.metal */; };
+		DF9160D7C29781A1C92FB61E /* white-hood-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 7642582647BA5D44D25A6EE8 /* white-hood-24.png */; };
+		E17D4FCD90D9FF9B0D3F7825 /* white-mask-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 522AB4D73337A13B428C6E93 /* white-mask-01.png */; };
+		E347EA9711CE5642DAD03151 /* white-hood-03.png in Resources */ = {isa = PBXBuildFile; fileRef = F0177C1C5558CE2DB285A6AE /* white-hood-03.png */; };
+		E74647C3D1B535EB885E9215 /* white-head-06.png in Resources */ = {isa = PBXBuildFile; fileRef = B2ABA60828E70F60A21520A9 /* white-head-06.png */; };
+		EA3FDBEC870DCBB40CDCBC2D /* JarvisRuntimeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5919F9FEC863FE0B2D52F6 /* JarvisRuntimeState.swift */; };
+		EB5ACDCEB3566118F5EBA95D /* white-head-05.png in Resources */ = {isa = PBXBuildFile; fileRef = F695BFCA34D3053E17D75C11 /* white-head-05.png */; };
+		ED8D5EC1DDD4CEAF91B5968C /* SceneShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 54C0AEC503F21103B58C9568 /* SceneShaders.metal */; };
+		EEF41921C8C7D640985C82A7 /* SpatialRenderingEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 511A6756561E62CB056A48A1 /* SpatialRenderingEngine.mm */; };
+		EEFC13B0C544A069EF29D892 /* white-mouth-01.png in Resources */ = {isa = PBXBuildFile; fileRef = BA81C77C40602F1558B9CB6C /* white-mouth-01.png */; };
+		EF28DBF6F64CB00D26C40B96 /* white-hood-05.png in Resources */ = {isa = PBXBuildFile; fileRef = E032C625F9EDB6A3C88284C6 /* white-hood-05.png */; };
+		F47ECC1651171C2D5F84C776 /* white-mask-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 51EB13F0823B37C5E43184B6 /* white-mask-06.png */; };
+		F64F2A1B55796462A3620A31 /* white-lines-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 06DE6676CE2568BECF630B27 /* white-lines-01.png */; };
+		F8BF9B5765F142FF9242308E /* white-hood-27.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F9F030AE092AAD6B55BCE26 /* white-hood-27.png */; };
+		FAC6F1A7A110A1A74D926B01 /* white-patch-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 86E362BC2164F79D09CFCEC6 /* white-patch-01.png */; };
+		FDCB6FB57FEFDF493188ECF5 /* FUITransparentImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08ACA968ABF8C104583E7C4 /* FUITransparentImmersiveView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0015A4049FFF0EFCBF983F5D /* cyan-alien-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cyan-alien-01.png"; sourceTree = "<group>"; };
+		053BCD4F58ECDF66B1F773ED /* cyan-skel-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cyan-skel-04.png"; sourceTree = "<group>"; };
+		062B744011F213B2D83BEC44 /* SpatialRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpatialRenderer.h; sourceTree = "<group>"; };
+		06DE6676CE2568BECF630B27 /* white-lines-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-lines-01.png"; sourceTree = "<group>"; };
+		09042E307C5BB099BC275EF8 /* white-hair-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hair-07.png"; sourceTree = "<group>"; };
+		0A46B197281ECF8AD9FC1ADF /* HolographicSurface.mtlx */ = {isa = PBXFileReference; path = HolographicSurface.mtlx; sourceTree = "<group>"; };
+		0EE68ECEDD814C65CE972FBD /* white-head-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-head-04.png"; sourceTree = "<group>"; };
+		0FC1DC465FCC7864886DD073 /* Orbitron.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Orbitron.ttf; sourceTree = "<group>"; };
+		0FC72F10E7EA585F8882D124 /* gray-skel-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray-skel-02.png"; sourceTree = "<group>"; };
+		10C36A454DDF2A64731FF6BA /* white-head-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-head-09.png"; sourceTree = "<group>"; };
+		1127042BBA11BD11DFEF094C /* white-hood-18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-18.png"; sourceTree = "<group>"; };
+		11817442A3D4993DA7EDD9D5 /* white-hair-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hair-02.png"; sourceTree = "<group>"; };
+		12D87C3FB68FDA6B7F586181 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		12E0A1AAA390A6429D022006 /* white-hair-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hair-08.png"; sourceTree = "<group>"; };
+		1316951193E8C5A27A4B6EC4 /* HandTrackingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackingModel.swift; sourceTree = "<group>"; };
+		148BC7CB94103EB1A5BDD614 /* white-headphones-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-headphones-01.png"; sourceTree = "<group>"; };
+		1521532F689ADBDA58A20301 /* white-alien-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-alien-01.png"; sourceTree = "<group>"; };
+		233B976BD8853F470F015F8C /* Mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		258E9C5A5DAA0FB914415A7C /* white-hood-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-06.png"; sourceTree = "<group>"; };
+		273D5E139680A4EA3F67DA5B /* white-scuba-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-scuba-01.png"; sourceTree = "<group>"; };
+		28201800111B0EB85C38A2A3 /* cyan-skel-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cyan-skel-02.png"; sourceTree = "<group>"; };
+		2900F3BB4F2303E8B3C2D16C /* cyan-skel-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cyan-skel-01.png"; sourceTree = "<group>"; };
+		2D4D0A4ED408F971BDC2B3EA /* white-hood-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-15.png"; sourceTree = "<group>"; };
+		2FDE0E7426BD971AD22D9066 /* white-head-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-head-02.png"; sourceTree = "<group>"; };
+		33D89FA962646FC9A8AB932B /* white-hair-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hair-04.png"; sourceTree = "<group>"; };
+		3481DDD2EE4A3247C1691312 /* white-hood-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-13.png"; sourceTree = "<group>"; };
+		36CF5054D402584794BA1904 /* white-sharp-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-sharp-01.png"; sourceTree = "<group>"; };
+		3793F2881AE540EF5E1BBEE6 /* white-hood-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-07.png"; sourceTree = "<group>"; };
+		37C5A7B221FDA3E5631F7AD6 /* white-hair-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hair-05.png"; sourceTree = "<group>"; };
+		3D0AE6756CFB9A16002D3DDC /* SpatialRenderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SpatialRenderer.mm; sourceTree = "<group>"; };
+		455654C740AE730DB6CBFD7A /* white-head-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-head-03.png"; sourceTree = "<group>"; };
+		4894C83BFA644D4DEEFF9B50 /* white-grill-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-grill-01.png"; sourceTree = "<group>"; };
+		494A93FB3E12DDBBFD8B219E /* JarvisVisionPrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarvisVisionPrototypeApp.swift; sourceTree = "<group>"; };
+		4A26950717FC559EFAA456BA /* white-hood-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-09.png"; sourceTree = "<group>"; };
+		4F9F030AE092AAD6B55BCE26 /* white-hood-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-27.png"; sourceTree = "<group>"; };
+		50AA4D582DCC32DA4A829773 /* white-hood-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-08.png"; sourceTree = "<group>"; };
+		511A6756561E62CB056A48A1 /* SpatialRenderingEngine.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SpatialRenderingEngine.mm; sourceTree = "<group>"; };
+		51682D6A31B127908EA0E826 /* white-bald-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-bald-01.png"; sourceTree = "<group>"; };
+		518A0ADCE9833E532CC6FAFE /* Mesh.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Mesh.mm; sourceTree = "<group>"; };
+		51EB13F0823B37C5E43184B6 /* white-mask-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-mask-06.png"; sourceTree = "<group>"; };
+		522AB4D73337A13B428C6E93 /* white-mask-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-mask-01.png"; sourceTree = "<group>"; };
+		52BB8FD7896490598DE84C1D /* white-shine-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-shine-01.png"; sourceTree = "<group>"; };
+		53C558624FD69762A0A746F5 /* white-grill-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-grill-02.png"; sourceTree = "<group>"; };
+		54C0AEC503F21103B58C9568 /* SceneShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SceneShaders.metal; sourceTree = "<group>"; };
+		6006F13F47499A1CA821AE64 /* white-head-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-head-01.png"; sourceTree = "<group>"; };
+		602FF8DB796673A941CB178A /* white-headset-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-headset-01.png"; sourceTree = "<group>"; };
+		66C11E84AFA3588E67158E8C /* white-collar-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-collar-01.png"; sourceTree = "<group>"; };
+		6CC18A32C75F53CDAB9AE6D2 /* white-hair-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hair-09.png"; sourceTree = "<group>"; };
+		6EC8FA795D1CFC229C283CE4 /* white-hood-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-20.png"; sourceTree = "<group>"; };
+		6F8AAF1FDECDDE4309143B81 /* white-head-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-head-07.png"; sourceTree = "<group>"; };
+		7071338C07352A2E6AF1990A /* white-lines-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-lines-03.png"; sourceTree = "<group>"; };
+		73BE04850F377A5DDF30143D /* white-robot-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-robot-03.png"; sourceTree = "<group>"; };
+		742F5F6D93CB18A822569829 /* white-hood-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-29.png"; sourceTree = "<group>"; };
+		7642582647BA5D44D25A6EE8 /* white-hood-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-24.png"; sourceTree = "<group>"; };
+		7B413D9C5DBAC26AA06B9076 /* white-hood-21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-21.png"; sourceTree = "<group>"; };
+		7C13D096A9C42BE792F938E9 /* black-headset-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-headset-01.png"; sourceTree = "<group>"; };
+		7CB4E717F057882D3BDFFC3C /* dark-skel-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dark-skel-01.png"; sourceTree = "<group>"; };
+		8066E4B7057CB58FCC617223 /* white-hood-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-25.png"; sourceTree = "<group>"; };
+		85AAF9A2E4072516C916853F /* white-skel-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-skel-03.png"; sourceTree = "<group>"; };
+		86E362BC2164F79D09CFCEC6 /* white-patch-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-patch-01.png"; sourceTree = "<group>"; };
+		86F3ADDB133629424295C27A /* white-robot-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-robot-02.png"; sourceTree = "<group>"; };
+		878204A7CD98E0DB287A4FD1 /* white-hair-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hair-01.png"; sourceTree = "<group>"; };
+		8A5B350D5136D0EE954105A2 /* GlowingModelImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingModelImmersiveView.swift; sourceTree = "<group>"; };
+		8A5E9BBCE995AECC6FEB0D36 /* JarvisMetalImmersiveContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarvisMetalImmersiveContent.swift; sourceTree = "<group>"; };
+		90066F9ECD7571B64C0C191D /* white-headset-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-headset-04.png"; sourceTree = "<group>"; };
+		904A7920D8B9737B861845C6 /* white-egg-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-egg-01.png"; sourceTree = "<group>"; };
+		94E80771CC7FB505BE134A67 /* white-hair-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hair-03.png"; sourceTree = "<group>"; };
+		95C2FCDCBC5BC2ED40B455CE /* Orbitron-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-ExtraBold.ttf"; sourceTree = "<group>"; };
+		97E21A43C8D5225ECB5A61DB /* white-hood-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-30.png"; sourceTree = "<group>"; };
+		9A9D80595B02DFC43EF841EB /* white-tube-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-tube-01.png"; sourceTree = "<group>"; };
+		A113D730D41CD12DF890A135 /* white-hood-28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-28.png"; sourceTree = "<group>"; };
+		A847FA869718F3D41F3A7DBD /* JarvisSceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarvisSceneController.swift; sourceTree = "<group>"; };
+		A8B82BADEB3D3531C0D14C0D /* white-hood-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-14.png"; sourceTree = "<group>"; };
+		AB212A363A5F81F1DBDB9E43 /* cyan-skel-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cyan-skel-03.png"; sourceTree = "<group>"; };
+		ADED495B6B5DB3CD7C9E8F41 /* JarvisImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarvisImmersiveView.swift; sourceTree = "<group>"; };
+		AE5F91AC785B2E63CFD9BAF8 /* JarvisVisionPrototype.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JarvisVisionPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED36DD507173503510A047E /* white-mask-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-mask-04.png"; sourceTree = "<group>"; };
+		B08ACA968ABF8C104583E7C4 /* FUITransparentImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUITransparentImmersiveView.swift; sourceTree = "<group>"; };
+		B1555D14958C4093737D8913 /* studio.hdr */ = {isa = PBXFileReference; path = studio.hdr; sourceTree = "<group>"; };
+		B28FCE8017D705E05C95BF7E /* white-hood-22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-22.png"; sourceTree = "<group>"; };
+		B2ABA60828E70F60A21520A9 /* white-head-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-head-06.png"; sourceTree = "<group>"; };
+		B2E468C777035A5C6C2C04D5 /* white-hood-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-10.png"; sourceTree = "<group>"; };
+		B329C47CC1721B37B6E56140 /* white-headset-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-headset-02.png"; sourceTree = "<group>"; };
+		B36CAA3F45C2ECC0D43D4BE1 /* white-mask-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-mask-05.png"; sourceTree = "<group>"; };
+		B407281258A99599F9C66D8E /* white-robot-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-robot-01.png"; sourceTree = "<group>"; };
+		B7E44D77C931940FE2848408 /* white-hood-31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-31.png"; sourceTree = "<group>"; };
+		BA81C77C40602F1558B9CB6C /* white-mouth-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-mouth-01.png"; sourceTree = "<group>"; };
+		BB1E49A50A3AFF5F1FA3DE97 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
+		BB35E708CF45814300DDC229 /* white-lines-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-lines-02.png"; sourceTree = "<group>"; };
+		BC036A6E9862E8767A369154 /* MetalParticlePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalParticlePreviewView.swift; sourceTree = "<group>"; };
+		BE794E83DBEFB3DD9EF0A618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C062C866C153E53D2AE25A75 /* white-line-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-line-01.png"; sourceTree = "<group>"; };
+		C17267FE6816146E76395869 /* white-hood-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-04.png"; sourceTree = "<group>"; };
+		C2A664B66887001195609710 /* gray-skel-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray-skel-04.png"; sourceTree = "<group>"; };
+		C4C39B209B4C5F05D4F0E80D /* MathExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathExtensions.swift; sourceTree = "<group>"; };
+		CAAEC8F58BC84921EB250FE6 /* white-hair-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hair-06.png"; sourceTree = "<group>"; };
+		CB29C8BAF734F858E76243DF /* white-headset-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-headset-05.png"; sourceTree = "<group>"; };
+		CB658A0B4692143EDC5A7237 /* gray-skel-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray-skel-01.png"; sourceTree = "<group>"; };
+		CB6B829CFF256409823F0C83 /* white-hood-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-26.png"; sourceTree = "<group>"; };
+		CCC71E4CD7AAD02A1C0B7BA9 /* white-mask-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-mask-02.png"; sourceTree = "<group>"; };
+		CE9B07CE4941F63351372266 /* white-headset-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-headset-03.png"; sourceTree = "<group>"; };
+		CFF37FF70053CFB369019F95 /* blue-skel-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-skel-01.png"; sourceTree = "<group>"; };
+		D18E6D537F3D6789C5978CF1 /* gray-skel-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray-skel-03.png"; sourceTree = "<group>"; };
+		D21F786B302E78DFB5683854 /* white-hood-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-32.png"; sourceTree = "<group>"; };
+		D520DC468CF066DC174E0669 /* white-hood-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-02.png"; sourceTree = "<group>"; };
+		D5C5CB561C1C38DF787C6DB0 /* white-skel-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-skel-02.png"; sourceTree = "<group>"; };
+		D651AAC7E16CDBD80F8F4092 /* SpatialRenderingEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpatialRenderingEngine.h; sourceTree = "<group>"; };
+		D7C299B50F08E2E85E6CC7F9 /* white-mask-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-mask-03.png"; sourceTree = "<group>"; };
+		DEE7715A0F81AF16FFDCF554 /* MetalParticleShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalParticleShaders.metal; sourceTree = "<group>"; };
+		E032C625F9EDB6A3C88284C6 /* white-hood-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-05.png"; sourceTree = "<group>"; };
+		E05B7FC8967C2BA48023E7E3 /* white-hood-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-12.png"; sourceTree = "<group>"; };
+		E0EE1BA1BD214A237C524804 /* FUIShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUIShowcaseView.swift; sourceTree = "<group>"; };
+		E2DD7905565FF3D652DBD5A0 /* white-hood-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-16.png"; sourceTree = "<group>"; };
+		E33338E7A47EC1BA285379E9 /* white-hood-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-11.png"; sourceTree = "<group>"; };
+		E3A56DF3011D5D4ED5A07B37 /* white-hood-23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-23.png"; sourceTree = "<group>"; };
+		E46E2990CEA690C10F19504E /* FUIImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUIImmersiveView.swift; sourceTree = "<group>"; };
+		E59FE77F9B89F384FBB45937 /* white-hood-19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-19.png"; sourceTree = "<group>"; };
+		E9FEE2F576E285A31301223A /* white-hood-17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-17.png"; sourceTree = "<group>"; };
+		ED5919F9FEC863FE0B2D52F6 /* JarvisRuntimeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarvisRuntimeState.swift; sourceTree = "<group>"; };
+		EEB18A2924E4A39549CF68FA /* Bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		EEFAAB22841BA85C8B60348C /* white-head-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-head-08.png"; sourceTree = "<group>"; };
+		F0177C1C5558CE2DB285A6AE /* white-hood-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-03.png"; sourceTree = "<group>"; };
+		F19468F875EDCEFAD4348C66 /* EnvironmentShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EnvironmentShaders.metal; sourceTree = "<group>"; };
+		F5E9D1FA963F087865FA88CC /* white-skel-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-skel-01.png"; sourceTree = "<group>"; };
+		F695BFCA34D3053E17D75C11 /* white-head-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-head-05.png"; sourceTree = "<group>"; };
+		F7065D4AD6860C9A27A3BD34 /* white-grid-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-grid-01.png"; sourceTree = "<group>"; };
+		F7BE4136BBE6EFDC7DFAB022 /* bluemarble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluemarble.png; sourceTree = "<group>"; };
+		FB1F5DE922CF963EFB99BF22 /* HolographicComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolographicComponent.swift; sourceTree = "<group>"; };
+		FDC2CB4217E9B7C3D2520CCA /* white-hood-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-hood-01.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09B06F3E926A714DB60FDAA2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				95C2FCDCBC5BC2ED40B455CE /* Orbitron-ExtraBold.ttf */,
+				0FC1DC465FCC7864886DD073 /* Orbitron.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		14AD15E294111CF6310A9426 = {
+			isa = PBXGroup;
+			children = (
+				55810A9B3ED6D8663C613BD7 /* JarvisVisionPrototype */,
+				5035F9E573452D08A79D7954 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5035F9E573452D08A79D7954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE5F91AC785B2E63CFD9BAF8 /* JarvisVisionPrototype.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55810A9B3ED6D8663C613BD7 /* JarvisVisionPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				EEB18A2924E4A39549CF68FA /* Bridging.h */,
+				BB1E49A50A3AFF5F1FA3DE97 /* ControlPanelView.swift */,
+				F19468F875EDCEFAD4348C66 /* EnvironmentShaders.metal */,
+				E46E2990CEA690C10F19504E /* FUIImmersiveView.swift */,
+				E0EE1BA1BD214A237C524804 /* FUIShowcaseView.swift */,
+				B08ACA968ABF8C104583E7C4 /* FUITransparentImmersiveView.swift */,
+				8A5B350D5136D0EE954105A2 /* GlowingModelImmersiveView.swift */,
+				1316951193E8C5A27A4B6EC4 /* HandTrackingModel.swift */,
+				FB1F5DE922CF963EFB99BF22 /* HolographicComponent.swift */,
+				BE794E83DBEFB3DD9EF0A618 /* Info.plist */,
+				ADED495B6B5DB3CD7C9E8F41 /* JarvisImmersiveView.swift */,
+				8A5E9BBCE995AECC6FEB0D36 /* JarvisMetalImmersiveContent.swift */,
+				ED5919F9FEC863FE0B2D52F6 /* JarvisRuntimeState.swift */,
+				A847FA869718F3D41F3A7DBD /* JarvisSceneController.swift */,
+				494A93FB3E12DDBBFD8B219E /* JarvisVisionPrototypeApp.swift */,
+				C4C39B209B4C5F05D4F0E80D /* MathExtensions.swift */,
+				233B976BD8853F470F015F8C /* Mesh.h */,
+				518A0ADCE9833E532CC6FAFE /* Mesh.mm */,
+				BC036A6E9862E8767A369154 /* MetalParticlePreviewView.swift */,
+				DEE7715A0F81AF16FFDCF554 /* MetalParticleShaders.metal */,
+				54C0AEC503F21103B58C9568 /* SceneShaders.metal */,
+				12D87C3FB68FDA6B7F586181 /* ShaderTypes.h */,
+				062B744011F213B2D83BEC44 /* SpatialRenderer.h */,
+				3D0AE6756CFB9A16002D3DDC /* SpatialRenderer.mm */,
+				D651AAC7E16CDBD80F8F4092 /* SpatialRenderingEngine.h */,
+				511A6756561E62CB056A48A1 /* SpatialRenderingEngine.mm */,
+				09B06F3E926A714DB60FDAA2 /* Fonts */,
+				D0D4BCFB0FED6F8DF0401F39 /* Materials */,
+				79476CBC8C6821715DEEEE5F /* Vision-Icons */,
+			);
+			name = JarvisVisionPrototype;
+			path = JarvisVisionPrototype;
+			sourceTree = "<group>";
+		};
+		79476CBC8C6821715DEEEE5F /* Vision-Icons */ = {
+			isa = PBXGroup;
+			children = (
+				7C13D096A9C42BE792F938E9 /* black-headset-01.png */,
+				CFF37FF70053CFB369019F95 /* blue-skel-01.png */,
+				0015A4049FFF0EFCBF983F5D /* cyan-alien-01.png */,
+				2900F3BB4F2303E8B3C2D16C /* cyan-skel-01.png */,
+				28201800111B0EB85C38A2A3 /* cyan-skel-02.png */,
+				AB212A363A5F81F1DBDB9E43 /* cyan-skel-03.png */,
+				053BCD4F58ECDF66B1F773ED /* cyan-skel-04.png */,
+				7CB4E717F057882D3BDFFC3C /* dark-skel-01.png */,
+				CB658A0B4692143EDC5A7237 /* gray-skel-01.png */,
+				0FC72F10E7EA585F8882D124 /* gray-skel-02.png */,
+				D18E6D537F3D6789C5978CF1 /* gray-skel-03.png */,
+				C2A664B66887001195609710 /* gray-skel-04.png */,
+				1521532F689ADBDA58A20301 /* white-alien-01.png */,
+				51682D6A31B127908EA0E826 /* white-bald-01.png */,
+				66C11E84AFA3588E67158E8C /* white-collar-01.png */,
+				904A7920D8B9737B861845C6 /* white-egg-01.png */,
+				F7065D4AD6860C9A27A3BD34 /* white-grid-01.png */,
+				4894C83BFA644D4DEEFF9B50 /* white-grill-01.png */,
+				53C558624FD69762A0A746F5 /* white-grill-02.png */,
+				878204A7CD98E0DB287A4FD1 /* white-hair-01.png */,
+				11817442A3D4993DA7EDD9D5 /* white-hair-02.png */,
+				94E80771CC7FB505BE134A67 /* white-hair-03.png */,
+				33D89FA962646FC9A8AB932B /* white-hair-04.png */,
+				37C5A7B221FDA3E5631F7AD6 /* white-hair-05.png */,
+				CAAEC8F58BC84921EB250FE6 /* white-hair-06.png */,
+				09042E307C5BB099BC275EF8 /* white-hair-07.png */,
+				12E0A1AAA390A6429D022006 /* white-hair-08.png */,
+				6CC18A32C75F53CDAB9AE6D2 /* white-hair-09.png */,
+				6006F13F47499A1CA821AE64 /* white-head-01.png */,
+				2FDE0E7426BD971AD22D9066 /* white-head-02.png */,
+				455654C740AE730DB6CBFD7A /* white-head-03.png */,
+				0EE68ECEDD814C65CE972FBD /* white-head-04.png */,
+				F695BFCA34D3053E17D75C11 /* white-head-05.png */,
+				B2ABA60828E70F60A21520A9 /* white-head-06.png */,
+				6F8AAF1FDECDDE4309143B81 /* white-head-07.png */,
+				EEFAAB22841BA85C8B60348C /* white-head-08.png */,
+				10C36A454DDF2A64731FF6BA /* white-head-09.png */,
+				148BC7CB94103EB1A5BDD614 /* white-headphones-01.png */,
+				602FF8DB796673A941CB178A /* white-headset-01.png */,
+				B329C47CC1721B37B6E56140 /* white-headset-02.png */,
+				CE9B07CE4941F63351372266 /* white-headset-03.png */,
+				90066F9ECD7571B64C0C191D /* white-headset-04.png */,
+				CB29C8BAF734F858E76243DF /* white-headset-05.png */,
+				FDC2CB4217E9B7C3D2520CCA /* white-hood-01.png */,
+				D520DC468CF066DC174E0669 /* white-hood-02.png */,
+				F0177C1C5558CE2DB285A6AE /* white-hood-03.png */,
+				C17267FE6816146E76395869 /* white-hood-04.png */,
+				E032C625F9EDB6A3C88284C6 /* white-hood-05.png */,
+				258E9C5A5DAA0FB914415A7C /* white-hood-06.png */,
+				3793F2881AE540EF5E1BBEE6 /* white-hood-07.png */,
+				50AA4D582DCC32DA4A829773 /* white-hood-08.png */,
+				4A26950717FC559EFAA456BA /* white-hood-09.png */,
+				B2E468C777035A5C6C2C04D5 /* white-hood-10.png */,
+				E33338E7A47EC1BA285379E9 /* white-hood-11.png */,
+				E05B7FC8967C2BA48023E7E3 /* white-hood-12.png */,
+				3481DDD2EE4A3247C1691312 /* white-hood-13.png */,
+				A8B82BADEB3D3531C0D14C0D /* white-hood-14.png */,
+				2D4D0A4ED408F971BDC2B3EA /* white-hood-15.png */,
+				E2DD7905565FF3D652DBD5A0 /* white-hood-16.png */,
+				E9FEE2F576E285A31301223A /* white-hood-17.png */,
+				1127042BBA11BD11DFEF094C /* white-hood-18.png */,
+				E59FE77F9B89F384FBB45937 /* white-hood-19.png */,
+				6EC8FA795D1CFC229C283CE4 /* white-hood-20.png */,
+				7B413D9C5DBAC26AA06B9076 /* white-hood-21.png */,
+				B28FCE8017D705E05C95BF7E /* white-hood-22.png */,
+				E3A56DF3011D5D4ED5A07B37 /* white-hood-23.png */,
+				7642582647BA5D44D25A6EE8 /* white-hood-24.png */,
+				8066E4B7057CB58FCC617223 /* white-hood-25.png */,
+				CB6B829CFF256409823F0C83 /* white-hood-26.png */,
+				4F9F030AE092AAD6B55BCE26 /* white-hood-27.png */,
+				A113D730D41CD12DF890A135 /* white-hood-28.png */,
+				742F5F6D93CB18A822569829 /* white-hood-29.png */,
+				97E21A43C8D5225ECB5A61DB /* white-hood-30.png */,
+				B7E44D77C931940FE2848408 /* white-hood-31.png */,
+				D21F786B302E78DFB5683854 /* white-hood-32.png */,
+				C062C866C153E53D2AE25A75 /* white-line-01.png */,
+				06DE6676CE2568BECF630B27 /* white-lines-01.png */,
+				BB35E708CF45814300DDC229 /* white-lines-02.png */,
+				7071338C07352A2E6AF1990A /* white-lines-03.png */,
+				522AB4D73337A13B428C6E93 /* white-mask-01.png */,
+				CCC71E4CD7AAD02A1C0B7BA9 /* white-mask-02.png */,
+				D7C299B50F08E2E85E6CC7F9 /* white-mask-03.png */,
+				AED36DD507173503510A047E /* white-mask-04.png */,
+				B36CAA3F45C2ECC0D43D4BE1 /* white-mask-05.png */,
+				51EB13F0823B37C5E43184B6 /* white-mask-06.png */,
+				BA81C77C40602F1558B9CB6C /* white-mouth-01.png */,
+				86E362BC2164F79D09CFCEC6 /* white-patch-01.png */,
+				B407281258A99599F9C66D8E /* white-robot-01.png */,
+				86F3ADDB133629424295C27A /* white-robot-02.png */,
+				73BE04850F377A5DDF30143D /* white-robot-03.png */,
+				273D5E139680A4EA3F67DA5B /* white-scuba-01.png */,
+				36CF5054D402584794BA1904 /* white-sharp-01.png */,
+				52BB8FD7896490598DE84C1D /* white-shine-01.png */,
+				F5E9D1FA963F087865FA88CC /* white-skel-01.png */,
+				D5C5CB561C1C38DF787C6DB0 /* white-skel-02.png */,
+				85AAF9A2E4072516C916853F /* white-skel-03.png */,
+				9A9D80595B02DFC43EF841EB /* white-tube-01.png */,
+			);
+			path = "Vision-Icons";
+			sourceTree = "<group>";
+		};
+		D0D4BCFB0FED6F8DF0401F39 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE4136BBE6EFDC7DFAB022 /* bluemarble.png */,
+				0A46B197281ECF8AD9FC1ADF /* HolographicSurface.mtlx */,
+				B1555D14958C4093737D8913 /* studio.hdr */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90253D3C78AA408BA70DC7D3 /* JarvisVisionPrototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36038FA0D25622DD915CC5F7 /* Build configuration list for PBXNativeTarget "JarvisVisionPrototype" */;
+			buildPhases = (
+				A3E8B5486654750340F32CEE /* Sources */,
+				5220CFF83642DA9F4A4FCC1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JarvisVisionPrototype;
+			packageProductDependencies = (
+			);
+			productName = JarvisVisionPrototype;
+			productReference = AE5F91AC785B2E63CFD9BAF8 /* JarvisVisionPrototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77121026E9C40B1379F04DE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					90253D3C78AA408BA70DC7D3 = {
+						DevelopmentTeam = J3NP2QDWSC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2F5C5021D663B22C889FE103 /* Build configuration list for PBXProject "JarvisVisionPrototype" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 14AD15E294111CF6310A9426;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5035F9E573452D08A79D7954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90253D3C78AA408BA70DC7D3 /* JarvisVisionPrototype */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5220CFF83642DA9F4A4FCC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FE0B6F972042006827F181 /* HolographicSurface.mtlx in Resources */,
+				75417D3BD3EA3AF9706FCE90 /* Orbitron-ExtraBold.ttf in Resources */,
+				639DD93DB537F0882895405D /* Orbitron.ttf in Resources */,
+				5724CD0A2D01C2AF305A4E83 /* black-headset-01.png in Resources */,
+				5DE6B4CBFD7A1F728EA43F66 /* blue-skel-01.png in Resources */,
+				D459A3B814E819A5DBEC81B7 /* bluemarble.png in Resources */,
+				6BE9B84C93D8F3480073AD35 /* cyan-alien-01.png in Resources */,
+				6F0FB907A842DB1742D0FBBC /* cyan-skel-01.png in Resources */,
+				5B9EAA2EB57A68E563ABF216 /* cyan-skel-02.png in Resources */,
+				4D289D2A9343FBC9CA104A6E /* cyan-skel-03.png in Resources */,
+				C6903DF2813B0ACD00EBEC3E /* cyan-skel-04.png in Resources */,
+				0BABC857D3C0ACA6320DA4A3 /* dark-skel-01.png in Resources */,
+				4AB724B98034E0F8DA6C83C9 /* gray-skel-01.png in Resources */,
+				C7960A6A0E5158AD6FE78A8B /* gray-skel-02.png in Resources */,
+				BCA3DB1CD9EBD81381FD4D8D /* gray-skel-03.png in Resources */,
+				77EA8DAF026759EDB00C5505 /* gray-skel-04.png in Resources */,
+				047F305A84B311388BC1E012 /* studio.hdr in Resources */,
+				401F61595992032AA4F6BCAE /* white-alien-01.png in Resources */,
+				4F45A1D2DC3D021D7D67FD73 /* white-bald-01.png in Resources */,
+				D4422CA3713A318A6061999E /* white-collar-01.png in Resources */,
+				0C75CD0EB3735E2A1B6D35B9 /* white-egg-01.png in Resources */,
+				B14580732C01E00AF14BFE5D /* white-grid-01.png in Resources */,
+				34EF5192D95FA7A491F3B278 /* white-grill-01.png in Resources */,
+				4CA2FE8E826EDD84B9FD1DF1 /* white-grill-02.png in Resources */,
+				548E8A65AF2839072154AF0F /* white-hair-01.png in Resources */,
+				5F7BC106B031F6A9327013E1 /* white-hair-02.png in Resources */,
+				D44D296131BBCA8658290B6C /* white-hair-03.png in Resources */,
+				84E89BECC7321DC293B86134 /* white-hair-04.png in Resources */,
+				8B8051E9F65861464ABC542C /* white-hair-05.png in Resources */,
+				C0E985A791479986FB08A58B /* white-hair-06.png in Resources */,
+				4B305C24C8D6AC16E5969AFC /* white-hair-07.png in Resources */,
+				24BCDBBB360E7CDA3970FA30 /* white-hair-08.png in Resources */,
+				1A631EE7958C35AA7042795C /* white-hair-09.png in Resources */,
+				C6F781FDF09E3DDA88E196B4 /* white-head-01.png in Resources */,
+				92B1BBBCFB4F08013DE7D2E1 /* white-head-02.png in Resources */,
+				03F88485C003E995C7711972 /* white-head-03.png in Resources */,
+				40CF69E10EBD8EF658D2A649 /* white-head-04.png in Resources */,
+				EB5ACDCEB3566118F5EBA95D /* white-head-05.png in Resources */,
+				E74647C3D1B535EB885E9215 /* white-head-06.png in Resources */,
+				087F73E177C17BB855016F08 /* white-head-07.png in Resources */,
+				545167B781AC567F5A292022 /* white-head-08.png in Resources */,
+				7887A05170E900F3C807BEDB /* white-head-09.png in Resources */,
+				8CD98CA92A3E7F5C53B8EC48 /* white-headphones-01.png in Resources */,
+				612A042FB80D5D1689105511 /* white-headset-01.png in Resources */,
+				20A901E0660FA94DFAC73F34 /* white-headset-02.png in Resources */,
+				2ED1D8206500DCC8203D2CD9 /* white-headset-03.png in Resources */,
+				7B3EB3D0B60E578D1CBA1992 /* white-headset-04.png in Resources */,
+				49779D17C946FD488343FB04 /* white-headset-05.png in Resources */,
+				DA141E961F22B95851BE250C /* white-hood-01.png in Resources */,
+				7A423D63211A578BC04E1A41 /* white-hood-02.png in Resources */,
+				E347EA9711CE5642DAD03151 /* white-hood-03.png in Resources */,
+				51588B4B24430C28257470FF /* white-hood-04.png in Resources */,
+				EF28DBF6F64CB00D26C40B96 /* white-hood-05.png in Resources */,
+				497FF6EAB26BFF1EEFDB8978 /* white-hood-06.png in Resources */,
+				751C9885C1CEEA1710C4820A /* white-hood-07.png in Resources */,
+				7FDC73202ABFA8EF058A9144 /* white-hood-08.png in Resources */,
+				3ABD84566B1197862C935F7C /* white-hood-09.png in Resources */,
+				BECB3603C0DCA90114F652F5 /* white-hood-10.png in Resources */,
+				7C29E6B32FE60F03F7CB8740 /* white-hood-11.png in Resources */,
+				A81F87CBBDB63AD4DCEAA5A9 /* white-hood-12.png in Resources */,
+				676235704DD099157D582121 /* white-hood-13.png in Resources */,
+				0CD91B62801B67DD02E98028 /* white-hood-14.png in Resources */,
+				D0CF173FCBDA14F868A957B4 /* white-hood-15.png in Resources */,
+				A14BE88A36C29A6CBFF8274C /* white-hood-16.png in Resources */,
+				01A1FB9AF10A5FDA7BBB0F4D /* white-hood-17.png in Resources */,
+				BF68ACEDBAD98E43A9A72E0B /* white-hood-18.png in Resources */,
+				D0CB4992F59524963F6440B6 /* white-hood-19.png in Resources */,
+				B6C288A1911089ED0B4E4E73 /* white-hood-20.png in Resources */,
+				3F1050152B1D114DF30CB2F1 /* white-hood-21.png in Resources */,
+				7C1065644DA034D6B6BBC271 /* white-hood-22.png in Resources */,
+				4F543E058D6817DBBCBF5F1F /* white-hood-23.png in Resources */,
+				DF9160D7C29781A1C92FB61E /* white-hood-24.png in Resources */,
+				1723ED2A43A007483DA638C2 /* white-hood-25.png in Resources */,
+				B606D6EEF5BA9BE359C190B0 /* white-hood-26.png in Resources */,
+				F8BF9B5765F142FF9242308E /* white-hood-27.png in Resources */,
+				AA9B0EFEFA981A79DB6D9E15 /* white-hood-28.png in Resources */,
+				B5F5C026B2A10C52DCF6F715 /* white-hood-29.png in Resources */,
+				C5621BF048BC5D62CCD3E9A8 /* white-hood-30.png in Resources */,
+				9D15FCAB9ABCC687E434CCE3 /* white-hood-31.png in Resources */,
+				D8E3D02C9B553A27B643F184 /* white-hood-32.png in Resources */,
+				9188A3785A9C0966C0806CBB /* white-line-01.png in Resources */,
+				F64F2A1B55796462A3620A31 /* white-lines-01.png in Resources */,
+				A6B4366E2C97263E8F750CEF /* white-lines-02.png in Resources */,
+				8ED4606B0C01AC38EB314871 /* white-lines-03.png in Resources */,
+				E17D4FCD90D9FF9B0D3F7825 /* white-mask-01.png in Resources */,
+				4DEF3E16FCEBFA7428AC867F /* white-mask-02.png in Resources */,
+				8D6911185B848A7235747EC7 /* white-mask-03.png in Resources */,
+				184F70B21F94AF915B028D99 /* white-mask-04.png in Resources */,
+				ACD71435B90F55859A8A8835 /* white-mask-05.png in Resources */,
+				F47ECC1651171C2D5F84C776 /* white-mask-06.png in Resources */,
+				EEFC13B0C544A069EF29D892 /* white-mouth-01.png in Resources */,
+				FAC6F1A7A110A1A74D926B01 /* white-patch-01.png in Resources */,
+				59AFFD03BD8280AA18FD3071 /* white-robot-01.png in Resources */,
+				AD097893EB18E247BE953F5B /* white-robot-02.png in Resources */,
+				4CE2A4B93C35E2883554730C /* white-robot-03.png in Resources */,
+				7D75C6B91425C10EFA689F5F /* white-scuba-01.png in Resources */,
+				85C71B07B964D33A00FD91EF /* white-sharp-01.png in Resources */,
+				5F062729A343AB44E7BAEDD7 /* white-shine-01.png in Resources */,
+				AA78324E6A13C75D31086481 /* white-skel-01.png in Resources */,
+				1FD412C821AD9DEE38905F84 /* white-skel-02.png in Resources */,
+				46BA178AEA7424C4CDBBD217 /* white-skel-03.png in Resources */,
+				982E58F5290501531B9765F3 /* white-tube-01.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3E8B5486654750340F32CEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				893C46BA34258C5159F01D4A /* ControlPanelView.swift in Sources */,
+				75EA957608BEE377C4D80E69 /* EnvironmentShaders.metal in Sources */,
+				C8D827BC34AC0163C4C0BBEE /* FUIImmersiveView.swift in Sources */,
+				2C1266EC32841868892AE1A3 /* FUIShowcaseView.swift in Sources */,
+				FDCB6FB57FEFDF493188ECF5 /* FUITransparentImmersiveView.swift in Sources */,
+				400909503C9F0785F621DCC5 /* GlowingModelImmersiveView.swift in Sources */,
+				2D28481FC561F2A8F90F61E5 /* HandTrackingModel.swift in Sources */,
+				263D1A4361307704B1CE872F /* HolographicComponent.swift in Sources */,
+				380383A7212EC7C1AAD0AD9C /* JarvisImmersiveView.swift in Sources */,
+				5678DDA3C5FA8C1FF4FB4A93 /* JarvisMetalImmersiveContent.swift in Sources */,
+				EA3FDBEC870DCBB40CDCBC2D /* JarvisRuntimeState.swift in Sources */,
+				A4C9F1D4BE04B9554C757F09 /* JarvisSceneController.swift in Sources */,
+				705F95E2A02CABE2B6A49CB2 /* JarvisVisionPrototypeApp.swift in Sources */,
+				64D053587F8ACFA3A44323AC /* MathExtensions.swift in Sources */,
+				00BB298FBE6545831011AD84 /* Mesh.mm in Sources */,
+				6A8963E3184E0BF53A7DF666 /* MetalParticlePreviewView.swift in Sources */,
+				DB69E8B2EFBCFD68AE9EDAF7 /* MetalParticleShaders.metal in Sources */,
+				ED8D5EC1DDD4CEAF91B5968C /* SceneShaders.metal in Sources */,
+				6E9B25F9BE5CE4120CA9B80D /* SpatialRenderer.mm in Sources */,
+				EEF41921C8C7D640985C82A7 /* SpatialRenderingEngine.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5A2A7840E9DB0A0046361A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3NP2QDWSC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JarvisVisionPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fyzel.JarvisVisionPrototype;
+				SDKROOT = xros;
+				SWIFT_OBJC_BRIDGING_HEADER = JarvisVisionPrototype/Bridging.h;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Release;
+		};
+		7E2B8BA4FC0E58F3FBFEECDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		9FFD0F122A235388BCC07869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		C8852727282FD769248BB699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3NP2QDWSC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JarvisVisionPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fyzel.JarvisVisionPrototype;
+				SDKROOT = xros;
+				SWIFT_OBJC_BRIDGING_HEADER = JarvisVisionPrototype/Bridging.h;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F5C5021D663B22C889FE103 /* Build configuration list for PBXProject "JarvisVisionPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2B8BA4FC0E58F3FBFEECDD /* Debug */,
+				9FFD0F122A235388BCC07869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		36038FA0D25622DD915CC5F7 /* Build configuration list for PBXNativeTarget "JarvisVisionPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8852727282FD769248BB699 /* Debug */,
+				5A2A7840E9DB0A0046361A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77121026E9C40B1379F04DE8 /* Project object */;
+}
