@@ -134,6 +134,10 @@ final class HandTrackingModel: ObservableObject {
     private var currentRunID: UUID?
     private var leftHand: TrackedHand?
     private var rightHand: TrackedHand?
+    private var filteredJoints: [HandAnchor.Chirality: [HandSkeleton.JointName: SIMD3<Float>]] = [:]
+    private var lastFilterTimestamp: TimeInterval?
+    private var pinchLatched = false
+    private var expansionLatched = false
 
     func start() {
         guard trackingTask == nil else { return }
@@ -167,6 +171,10 @@ final class HandTrackingModel: ObservableObject {
         session?.stop()
         leftHand = nil
         rightHand = nil
+        filteredJoints.removeAll()
+        lastFilterTimestamp = nil
+        pinchLatched = false
+        expansionLatched = false
         frame = HandFrame()
         sharedState.reset()
         SpatialRenderer_SetHandTrackingState(0, 0, 0, 0, 0, 0, 0)
@@ -178,6 +186,10 @@ final class HandTrackingModel: ObservableObject {
         leftHand = nil
         rightHand = nil
         frame = HandFrame()
+        filteredJoints.removeAll()
+        lastFilterTimestamp = nil
+        pinchLatched = false
+        expansionLatched = false
         sharedState.updateFrame(frame)
         SpatialRenderer_SetHandTrackingState(0, 0, 0, 0, 0, 0, 0)
     }
@@ -242,6 +254,10 @@ final class HandTrackingModel: ObservableObject {
         currentRunID = nil
         leftHand = nil
         rightHand = nil
+        filteredJoints.removeAll()
+        lastFilterTimestamp = nil
+        pinchLatched = false
+        expansionLatched = false
         frame = HandFrame()
         sharedState.reset()
         isTracking = false
@@ -303,6 +319,7 @@ final class HandTrackingModel: ObservableObject {
             } else {
                 rightHand = nil
             }
+            filteredJoints[anchor.chirality] = nil
             publishFrame()
             return
         }
@@ -328,7 +345,25 @@ final class HandTrackingModel: ObservableObject {
         }
 
         guard !joints.isEmpty else { return nil }
-        return TrackedHand(chirality: anchor.chirality, joints: joints)
+
+        // Smooth the official ARKit joint stream before it reaches gesture
+        // classification or either renderer. The adaptive exponential filter
+        // is responsive during motion and settles quickly when the hand stops.
+        let now = Date().timeIntervalSinceReferenceDate
+        let dt = min(max(now - (lastFilterTimestamp ?? now), 1.0 / 120.0), 0.1)
+        lastFilterTimestamp = now
+        let tau = 0.045
+        let alpha = Float(1.0 - exp(-dt / tau))
+        var previous = filteredJoints[anchor.chirality] ?? [:]
+        for (name, value) in joints {
+            if let old = previous[name] {
+                previous[name] = old + (value - old) * alpha
+            } else {
+                previous[name] = value
+            }
+        }
+        filteredJoints[anchor.chirality] = previous
+        return TrackedHand(chirality: anchor.chirality, joints: previous)
     }
 
     private func publishFrame() {
@@ -341,7 +376,17 @@ final class HandTrackingModel: ObservableObject {
         }
         let bestPinch = pinchCandidates.min { $0.0 < $1.0 }
 
-        if let bestPinch, bestPinch.0 < 0.035 {
+        if let bestPinch {
+            if pinchLatched {
+                pinchLatched = bestPinch.0 < 0.045
+            } else {
+                pinchLatched = bestPinch.0 < 0.030
+            }
+        } else {
+            pinchLatched = false
+        }
+
+        if pinchLatched, let bestPinch {
             next.gesture = .pinch
             next.pinchPoint = bestPinch.1
             next.focusPoint = bestPinch.1
@@ -349,7 +394,12 @@ final class HandTrackingModel: ObservableObject {
             let distance = simd_distance(left, right)
             next.expansion = clamped((distance - 0.22) / 0.50, 0, 1)
             next.focusPoint = (left + right) / 2
-            next.gesture = next.expansion > 0.42 ? .twoHandExpand : .idle
+            if expansionLatched {
+                expansionLatched = next.expansion > 0.34
+            } else {
+                expansionLatched = next.expansion > 0.42
+            }
+            next.gesture = expansionLatched ? .twoHandExpand : .idle
         } else if next.openness > 0.50 {
             next.gesture = .palmOpen
             next.focusPoint = leftHand?.palmCenter ?? rightHand?.palmCenter
