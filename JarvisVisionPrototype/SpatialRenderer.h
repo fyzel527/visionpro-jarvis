@@ -36,4 +36,7 @@ private:
     SRConfiguration *_configuration;
     CFTimeInterval _sceneTime;
     CFTimeInterval _lastRenderTime;
+    bool _pinchActive = false;
+    simd_float3 _pinchStartPoint = simd_make_float3(0.0f, 0.0f, 0.0f);
+    simd_float3 _interactionOffset = simd_make_float3(0.0f, 0.0f, 0.0f);
 };

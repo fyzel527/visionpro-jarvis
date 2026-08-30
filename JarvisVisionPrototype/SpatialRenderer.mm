@@ -184,19 +184,37 @@ void SpatialRenderer::drawAndPresent(cp_frame_t frame, cp_drawable_t drawable) {
     const bool pinchValid = gPinchValid.load(std::memory_order_relaxed) != 0;
     const float pinchX = gPinchX.load(std::memory_order_relaxed);
     const float pinchY = gPinchY.load(std::memory_order_relaxed);
+    const float pinchZ = gPinchZ.load(std::memory_order_relaxed);
     const float openness = gOpenness.load(std::memory_order_relaxed);
     const float expansion = gExpansion.load(std::memory_order_relaxed);
 
     // Keep the Metal interaction model deliberately small and deterministic:
     // open hands expand the formation, while a pinch acts as a spatial cursor.
     const float gestureScale = fmaxf(0.72f, 1.0f + openness * 0.22f + expansion * 0.45f - (gesture == 2 ? 0.16f : 0.0f));
-    const float cursorX = pinchValid ? fmaxf(-0.55f, fminf(0.55f, pinchX * 0.65f)) : 0.0f;
-    const float cursorY = pinchValid ? fmaxf(-0.45f, fminf(0.45f, (pinchY - estimatedHeadHeight) * 0.55f)) : 0.0f;
+    const bool pinch = gesture == 2 && pinchValid;
+    if (pinch && !_pinchActive) {
+        _pinchActive = true;
+        _pinchStartPoint = simd_make_float3(pinchX, pinchY, pinchZ);
+    } else if (!pinch) {
+        _pinchActive = false;
+    }
+
+    simd_float3 targetOffset = simd_make_float3(0.0f, 0.0f, 0.0f);
+    if (pinch && _pinchActive) {
+        const simd_float3 currentPoint = simd_make_float3(pinchX, pinchY, pinchZ);
+        // Relative motion from the pinch-down point prevents an immediate
+        // jump when the gesture begins away from the model's origin.
+        targetOffset = (currentPoint - _pinchStartPoint) * 0.8f;
+        targetOffset.x = fmaxf(-0.65f, fminf(0.65f, targetOffset.x));
+        targetOffset.y = fmaxf(-0.55f, fminf(0.55f, targetOffset.y));
+        targetOffset.z = 0.0f;
+    }
+    _interactionOffset += (targetOffset - _interactionOffset) * 0.22f;
     const float heroScale = 0.38f * gestureScale;
     simd_float4x4 modelTransform = simd_matrix(simd_make_float4(   c * heroScale, 0.0f,    -s * heroScale, 0.0f),
                                                simd_make_float4(0.0f, heroScale,  0.0f, 0.0f),
                                                simd_make_float4(   s * heroScale, 0.0f,     c * heroScale, 0.0f),
-                                               simd_make_float4(cursorX, estimatedHeadHeight + cursorY, -1.65f, 1.0f));
+                                               simd_make_float4(_interactionOffset.x, estimatedHeadHeight + _interactionOffset.y, -1.65f, 1.0f));
     for (size_t i = 0; i < _modelMeshes.size(); ++i) {
         simd_float4x4 m = modelTransform;
         _modelMeshes[i]->setModelMatrix(m);
