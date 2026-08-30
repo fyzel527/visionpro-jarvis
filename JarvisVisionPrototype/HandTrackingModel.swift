@@ -138,6 +138,8 @@ final class HandTrackingModel: ObservableObject {
     private var lastFilterTimestamp: TimeInterval?
     private var pinchLatched = false
     private var expansionLatched = false
+    private var lastPinchObservation: TimeInterval?
+    private var lastPinchPoint: SIMD3<Float>?
 
     func start() {
         guard trackingTask == nil else { return }
@@ -175,6 +177,8 @@ final class HandTrackingModel: ObservableObject {
         lastFilterTimestamp = nil
         pinchLatched = false
         expansionLatched = false
+        lastPinchObservation = nil
+        lastPinchPoint = nil
         frame = HandFrame()
         sharedState.reset()
         SpatialRenderer_SetHandTrackingState(0, 0, 0, 0, 0, 0, 0)
@@ -190,6 +194,8 @@ final class HandTrackingModel: ObservableObject {
         lastFilterTimestamp = nil
         pinchLatched = false
         expansionLatched = false
+        lastPinchObservation = nil
+        lastPinchPoint = nil
         sharedState.updateFrame(frame)
         SpatialRenderer_SetHandTrackingState(0, 0, 0, 0, 0, 0, 0)
     }
@@ -258,6 +264,8 @@ final class HandTrackingModel: ObservableObject {
         lastFilterTimestamp = nil
         pinchLatched = false
         expansionLatched = false
+        lastPinchObservation = nil
+        lastPinchPoint = nil
         frame = HandFrame()
         sharedState.reset()
         isTracking = false
@@ -376,20 +384,31 @@ final class HandTrackingModel: ObservableObject {
         }
         let bestPinch = pinchCandidates.min { $0.0 < $1.0 }
 
+        let now = Date().timeIntervalSinceReferenceDate
         if let bestPinch {
+            lastPinchObservation = now
+            lastPinchPoint = bestPinch.1
             if pinchLatched {
                 pinchLatched = bestPinch.0 < 0.045
             } else {
                 pinchLatched = bestPinch.0 < 0.030
             }
+        } else if pinchLatched,
+                  let lastPinchObservation,
+                  now - lastPinchObservation < 0.12 {
+            // HandAnchor updates can briefly omit one fingertip while the
+            // hand remains tracked. Keep the grab alive for a short grace
+            // window instead of releasing the Metal drag on one bad sample.
+            next.pinchPoint = lastPinchPoint
+            next.focusPoint = lastPinchPoint
         } else {
             pinchLatched = false
+            lastPinchObservation = nil
         }
 
-        if pinchLatched, let bestPinch {
+        if pinchLatched, let pinchPoint = next.pinchPoint {
             next.gesture = .pinch
-            next.pinchPoint = bestPinch.1
-            next.focusPoint = bestPinch.1
+            next.focusPoint = pinchPoint
         } else if let left = leftHand?.palmCenter, let right = rightHand?.palmCenter {
             let distance = simd_distance(left, right)
             next.expansion = clamped((distance - 0.22) / 0.50, 0, 1)
